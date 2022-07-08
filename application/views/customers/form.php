@@ -39,7 +39,7 @@
 					</div>
 				</div>
 
-				<div class="form-group form-group-sm">
+				<div class="form-group form-group-sm hide">
 					<?php echo form_label($this->lang->line('customers_company_name'), 'company_name', array('class' => 'control-label col-xs-3')); ?>
 					<div class='col-xs-8'>
 						<?php echo form_input(array(
@@ -51,7 +51,7 @@
 					</div>
 				</div>
 
-				<div class="form-group form-group-sm">
+				<div class="form-group form-group-sm hide">
 					<?php echo form_label($this->lang->line('customers_rif'), 'rif', array('class' => 'control-label col-xs-3')); ?>
 					<div class='col-xs-8'>
 						<?php echo form_input(array(
@@ -63,7 +63,7 @@
 					</div>
 				</div>
 
-				<div class="form-group form-group-sm">
+				<div class="form-group form-group-sm hide">
 					<?php echo form_label($this->lang->line('customers_customer_number'), 'customer_number', array('class'=>'control-label col-xs-3')); ?>
 					<div class='col-xs-8'>
 						<div class="input-group">
@@ -80,7 +80,7 @@
 
 				<?php $this->load->view("people/form_basic_info"); ?>
 
-				<div class="form-group form-group-sm">
+				<div class="form-group form-group-sm hide">
 					<?php echo form_label($this->lang->line('customers_image'), 'customer_image', array('class'=>'control-label col-xs-3')); ?>
 					<div class='col-xs-8'>
 						<div class="fileinput <?php echo $logo_exists ? 'fileinput-exists' : 'fileinput-new'; ?>" data-provides="fileinput">
@@ -102,7 +102,7 @@
 					</div>
 				</div>
 				
-				<div class="form-group form-group-sm">
+				<div class="form-group form-group-sm hide">
 					<?php echo form_label($this->lang->line('customers_discount_type'), 'discount_type', array('class'=>'control-label col-xs-3')); ?>
 					<div class="col-xs-8">
 						<label class="radio-inline">
@@ -126,7 +126,7 @@
 					</div>
 				</div>
 
-				<div class="form-group form-group-sm">
+				<div class="form-group form-group-sm hide">
 					<?php echo form_label($this->lang->line('customers_discount'), 'discount', array('class' => 'control-label col-xs-3')); ?>
 					<div class='col-xs-3'>
 						<div class="input-group input-group-sm">
@@ -140,7 +140,7 @@
 					</div>	
 				</div>
 
-				<div class="form-group form-group-sm">
+				<div class="form-group form-group-sm hide">
 					<?php echo form_label($this->lang->line('customers_account_number'), 'account_number', array('class' => 'control-label col-xs-3')); ?>
 					<div class='col-xs-4'>
 						<?php echo form_input(array(
@@ -152,7 +152,7 @@
 					</div>
 				</div>
 
-				<div class="form-group form-group-sm">
+				<div class="form-group form-group-sm hide">
 					<?php echo form_label($this->lang->line('customers_tax_id'), 'tax_id', array('class' => 'control-label col-xs-3')); ?>
 					<div class='col-xs-4'>
 						<?php echo form_input(array(
@@ -186,7 +186,7 @@
 					</div>
 				<?php endif; ?>
 
-				<div class="form-group form-group-sm">
+				<div class="form-group form-group-sm hide">
 					<?php echo form_label($this->lang->line('customers_taxable'), 'taxable', array('class' => 'control-label col-xs-3')); ?>
 					<div class='col-xs-1'>
 						<?php echo form_checkbox('taxable', '1', $person_info->taxable == '' ? TRUE : (boolean)$person_info->taxable); ?>

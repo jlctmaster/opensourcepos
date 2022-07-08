@@ -59,7 +59,7 @@
 	</div>
 </div>
 
-<div class="form-group form-group-sm">	
+<div class="form-group form-group-sm hide">	
 	<?php echo form_label($this->lang->line('common_email'), 'email', array('class'=>'control-label col-xs-3')); ?>
 	<div class='col-xs-8'>
 		<div class="input-group">
@@ -89,7 +89,7 @@
 	</div>
 </div>
 
-<div class="form-group form-group-sm">	
+<div class="form-group form-group-sm hide">	
 	<?php echo form_label($this->lang->line('common_address_1'), 'address_1', array('class'=>'control-label col-xs-3')); ?>
 	<div class='col-xs-8'>
 		<?php echo form_input(array(
@@ -101,7 +101,7 @@
 	</div>
 </div>
 
-<div class="form-group form-group-sm">	
+<div class="form-group form-group-sm hide">	
 	<?php echo form_label($this->lang->line('common_address_2'), 'address_2', array('class'=>'control-label col-xs-3')); ?>
 	<div class='col-xs-8'>
 		<?php echo form_input(array(
@@ -113,7 +113,7 @@
 	</div>
 </div>
 
-<div class="form-group form-group-sm">	
+<div class="form-group form-group-sm hide">	
 	<?php echo form_label($this->lang->line('common_city'), 'city', array('class'=>'control-label col-xs-3')); ?>
 	<div class='col-xs-8'>
 		<?php echo form_input(array(
@@ -125,7 +125,7 @@
 	</div>
 </div>
 
-<div class="form-group form-group-sm">	
+<div class="form-group form-group-sm hide">	
 	<?php echo form_label($this->lang->line('common_state'), 'state', array('class'=>'control-label col-xs-3')); ?>
 	<div class='col-xs-8'>
 		<?php echo form_input(array(
@@ -137,7 +137,7 @@
 	</div>
 </div>
 
-<div class="form-group form-group-sm">	
+<div class="form-group form-group-sm hide">	
 	<?php echo form_label($this->lang->line('common_zip'), 'zip', array('class'=>'control-label col-xs-3')); ?>
 	<div class='col-xs-8'>
 		<?php echo form_input(array(
@@ -149,7 +149,7 @@
 	</div>
 </div>
 
-<div class="form-group form-group-sm">	
+<div class="form-group form-group-sm hide">	
 	<?php echo form_label($this->lang->line('common_country'), 'country', array('class'=>'control-label col-xs-3')); ?>
 	<div class='col-xs-8'>
 		<?php echo form_input(array(
@@ -161,7 +161,7 @@
 	</div>
 </div>
 
-<div class="form-group form-group-sm">	
+<div class="form-group form-group-sm hide">	
 	<?php echo form_label($this->lang->line('common_comments'), 'comments', array('class'=>'control-label col-xs-3')); ?>
 	<div class='col-xs-8'>
 		<?php echo form_textarea(array(
