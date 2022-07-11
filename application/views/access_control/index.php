@@ -98,8 +98,8 @@ $(document).ready(function()
 		            $('#lb_duedate').html("<b><?php echo $this->lang->line('customers_service_duedate');?>:</b> "+resp[0].service_duedate);
 		            $('#lb_dni').html("<b><?php echo $this->lang->line('common_dni');?>:</b> "+resp[0].dni);
 		            var status = (resp[0].status == 0 ? "<?php echo $this->lang->line('customers_status_0');?>" : (resp[0].status == 1 ? "<?php echo $this->lang->line('customers_status_1');?>" : "<?php echo $this->lang->line('customers_status_2');?>"));
-		            var font_size_full = (!isMobile ? 500: 100);
-		            var font_size = (!isMobile ? 400: 100);
+		            var font_size_full = (!isMobile ? 500: 250);
+		            var font_size = (!isMobile ? 400: 200);
 		            var span = (resp[0].status == 0 ? "<span style='font-size: "+font_size_full+"%;' class='label label-bs label-danger'>"+status.toUpperCase()+"</span>" : (resp[0].status == 1 ? (resp[0].daysplace > 5 ? "<span style='font-size: "+font_size_full+"%;' class='label label-bs label-success'>"+status.toUpperCase()+"</span>" : "<span style='font-size: "+font_size_full+"%;' class='label label-bs label-warning'>"+status.toUpperCase()+"</span>") : "<span style='font-size: "+font_size+"%;' class='label label-bs label-warning'>"+status.toUpperCase()+"</span>"));
 		            $('#lb_status').html("<b><?php echo $this->lang->line('common_state');?>:</b> "+span);
 		            if(resp[0].pic_filename.length > 0)
