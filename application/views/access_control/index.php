@@ -123,6 +123,8 @@ $(document).ready(function()
 			            	$('#pic_filename').css('height',150);	
 		            	}
 		            }
+		            $('#btn-send').removeClass("btn btn-info").addClass("btn btn-warning");
+		            $('#btn-send').prop('value','Registrar');
 		            $('#btn-send').focus();
 				}
 				else{
@@ -170,6 +172,8 @@ $(document).ready(function()
         $('#item_id').val("");
         //	Clear search field
         $('#search_key').val("");
+        $('#btn-send').removeClass("btn btn-warning").addClass("btn btn-info");
+		$('#btn-send').prop('value','Enviar');
 	    $.notify(response[0].message, { type: response[0].success ? 'success' : 'danger' });
         $('#search_key').focus();
 	  });
